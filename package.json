@@ -7,14 +7,20 @@
     "dev": "vite",
     "build": "tsc && vite build --base=./ .",
     "preview": "vite preview",
-    "ssc:dev": "ssc build -r --port 5173"
+    "start": "ssc build -r --port 5173"
   },
   "dependencies": {
+    "@lit/context": "^1.1.0",
+    "@lit/task": "^1.0.0",
+    "buffer": "^6.0.3",
     "lit": "^3.1.0"
   },
   "devDependencies": {
     "@socketsupply/socket": "^0.5.4",
+    "@types/node": "^18.19.0",
+    "rollup-plugin-node-polyfills": "^0.2.1",
     "typescript": "^5.2.2",
-    "vite": "^5.0.8"
+    "vite": "^5.0.8",
+    "vite-plugin-externalize-dependencies": "^0.11.0"
   }
 }
