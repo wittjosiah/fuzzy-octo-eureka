@@ -1,2 +1,3 @@
 /// <reference types="vite/client" />
-/// <reference types="@socketsupply/socket" />
+// TODO(wittjosiah): Types are out of date.
+// <reference types="@socketsupply/socket" />
