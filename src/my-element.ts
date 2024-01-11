@@ -6,7 +6,7 @@ import { customElement, property } from "lit/decorators.js";
 // @ts-ignore
 import { network, Encryption, sha256 } from "socket:network";
 
-const Z = 7;
+const Z = 9;
 
 /**
  * An example element.
@@ -78,7 +78,7 @@ export class MyElement extends LitElement {
   }
 
   private _onClick() {
-    const value = Buffer.from(JSON.stringify({ count: 1 }));
+    const value = Buffer.from(JSON.stringify({ count: 1, now: Date.now() }));
     console.log("click", value);
     this._subcluster.emit("count", value);
   }
